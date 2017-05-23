@@ -25,15 +25,17 @@ public class Main extends Application
         mainWindow = primaryStage;
         root = FXMLLoader.load(getClass().getResource("home.fxml"));
         mainWindow.setTitle("FFGUI - GUI for FFmpeg");
-        mainWindow.setScene(new Scene(root, 800, 600));
+        mainWindow.setScene(new Scene(root));
         mainWindow.setResizable(false);
 
+        /*
         WebView browser = new WebView();
         WebEngine engine = browser.getEngine();
         engine.load("https://duckduckgo.com");
         StackPane layout = new StackPane();
         layout.getChildren().add(browser);
         mainWindow.setScene(new Scene(layout, 1280, 800));
+        */
 
         mainWindow.show();
     }
